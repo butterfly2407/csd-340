@@ -1,0 +1,54 @@
+/* Katie Hilliard, 01/19/2025, Module 3.2 Assignment */
+
+
+/* General Settings */
+html, body {
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container Styling */
+#container {
+    margin: 50px 100px 0px 100px;
+}
+
+/* Header Styling */
+h1, h2, h3, h4 {
+    background-color: #FFFFFF; /* White background */
+    color: #0000FF; /* Blue text */
+    border: 1px solid #D6A800; /* Gold border */
+    padding: 10px;
+}
+
+h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 500;
+    text-align: left;
+    padding-top: 15px;
+}
+
+h3, h4 {
+    text-align: left;
+}
+
+/* Anchor Styling */
+a {
+    font-weight: bold;
+    color: #0000FF; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: #D6A800;
+}
+
+a:visited {
+    color: #7B5FA6; /* Purple for visited links */
+}
+

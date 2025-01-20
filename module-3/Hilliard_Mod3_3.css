@@ -1,0 +1,58 @@
+/* Katie Hilliard, 01/19/2025, Module 3.3 Assignment */
+
+/* Center h1 title */
+h1 {
+    text-align: center;
+}
+
+/* Side-by-side divs width set to 45% */
+section {
+    width: 45%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+/* Width of last div set to 100% and margin-top of 60% */
+footer div {
+    width: 100%;
+    margin-top: 60%;
+    float: right; /* Float the div to the right */
+}
+
+/* Weight of the h3 tags set to 500 */
+h3 {
+    font-weight: 500;
+}
+
+/* Weight of the lists set to 300 */
+ol, ul {
+    font-weight: 300;
+}
+
+/* 1px solid red border with a 15px border-radius to ordered list and its title */
+ol {
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style-position: inside; /* Numbers are inside border */
+}
+
+/* 1px dashed red border with a 15px border-radius to unordered list and its title */
+ul {
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style-type: upper-roman; /* Bullet points changed to upper-roman */
+    list-style-position: inside; /* Bullets are inside border */
+}
+
+/* Add :hover to links and show underlines when a cursor hovers over links */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Bottom div css value of float right and margin-bottom of 20px */
+footer div {
+    margin-bottom: 20px;
+    float: right;
+}
