@@ -1,4 +1,4 @@
-/* Katie Hilliard, 02/02/2025, Module 6.2 Assignment */
+/* Katie Hilliard, 02/09/2025, Module 8.2 Assignment */
 
 body {
     font-family: Arial, sans-serif;
@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50; /* Choose an appropriate color */
+    background-color: #4CAF50;
     color: white;
     padding: 20px;
     text-align: center;
@@ -38,9 +38,7 @@ h1 {
 }
 
 #container {
-    margin-top: 2%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 2% 5% 100px 5%;
     padding: 10px;
 }
 
@@ -67,9 +65,27 @@ h1 {
     padding: 2px 16px;
 }
 
+#movies {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#movies th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+
+#movies td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
 footer {
     background-color: #4CAF50;
-    position: absolute;
+    position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
     padding: 10px 0;
@@ -91,3 +107,4 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
