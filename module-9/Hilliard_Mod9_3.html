@@ -1,0 +1,49 @@
+/* Katie Hilliard, 02/13/2025, Module 9.3 Assignment */
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assignment 9.3 - JavaScript">
+    <meta name="author" content="Katie Hilliard">
+    <meta name="keywords" content="HTML, CSS, Assignment, Web Development">
+
+    <link rel="stylesheet" href="Hilliard_Mod9_3.css">
+
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        var word1 = "neighbors";
+        var word2 = "festivals";
+        var word3 = "adventures";
+        var word4 = "career";
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+        <h2>All About Me</h2>
+
+        <p class="intro">I'm from a small town called Manning where everyone knows <span id="word1">_________</span>. I grew up with my mother and older sister. I lived in the same house until I left for college in 2016.</p>
+        <p>I can remember going to the <span id="word2">_________</span> downtown with my family, playing games and getting on rides together. Those are some memories I'll hold dear to my heart forever.</p>
+        <p>I have a three-year-old son, and we enjoy going to the park, traveling, and reading books. These <span id="word3">_________</span> keep us busy and incorporate learning time for the both of us.</p>
+        <p>I currently work from home, and it's the reason I went back to school to pursue my <span id="word4">_________</span> in Software Development.</p>
+
+        <p>
+            <button type="button" onclick="document.getElementById('word1').innerHTML = word1">Reveal Word 1</button>
+            <button type="button" onclick="document.getElementById('word2').innerHTML = word2">Reveal Word 2</button>
+            <button type="button" onclick="document.getElementById('word3').innerHTML = word3">Reveal Word 3</button>
+            <button type="button" onclick="document.getElementById('word4').innerHTML = word4">Reveal Word 4</button>
+        </p>
+
+        <hr />
+
+        <address>
+            <p><a href="https://www.bellevue.edu">Bellevue University</a></p>
+            <p>1000 Galvin Road South</p>
+            <p>Bellevue, NE 68005</p>
+        </address>
+    </div>
+</body>
+</html>
+
