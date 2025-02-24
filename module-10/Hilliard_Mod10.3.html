@@ -1,0 +1,67 @@
+/* Katie Hilliard, 02/19/2025, Module 10.3 Assignment */
+
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'
+  'http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd'>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>
+      CSD 340 Web Development with HTML and CSS
+    </title>
+    <script>
+      function displayImage(imageFile) {
+        var largerImage = document.getElementById("mainImage");
+        var newNode = document.createElement("img");
+        newNode.id = "mainImage";
+        newNode.src = imageFile;
+        newNode.alt = "Large Image";
+        newNode.className = "mainImage";
+        newNode.style.width = "400px";
+        newNode.style.height = "auto";
+        largerImage.parentNode.replaceChild(newNode, largerImage);
+      }
+    </script>
+
+    <link rel='stylesheet' type='text/css' href='body1.css' />
+
+  </head>
+
+  <body>
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    <br />
+
+    <!-- Display Large Image -->
+    <div>
+      <img id="mainImage" class="mainImage" src="Images/Mom_and_Son.jpg" alt="Main Display Image" style="width:400px; height:auto; border:4px solid black;">
+    </div>
+    <br />
+
+    <!-- Thumbnail Images -->
+    <div>
+      <a href="#" onclick="displayImage('Images/Mom_and_Son.jpg')">
+        <img border="0" src="Images/Mom_and_Son.jpg" width="150" height="auto">
+      </a>
+
+      <a href="#" onclick="displayImage('Images/Son.jpg')">
+        <img border="0" src="Images/Son.jpg" width="150" height="auto">
+      </a>
+
+      <a href="#" onclick="displayImage('Images/Son_at_Beach.jpg')">
+        <img border="0" src="Images/Son_at_Beach.jpg" width="150" height="auto">
+      </a>
+
+      <a href="#" onclick="displayImage('Images/Son_Easter_Photo.jpg')">
+        <img border="0" src="Images/Son_Easter_Photo.jpg" width="150" height="auto">
+      </a>
+    </div>
+
+    <br />
+    <div onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">
+      Click on a thumbnail to change the large image.
+      <br />
+      Right-click and select "View Source" for more details.
+    </div>
+
+  </body>
+</html>
+
