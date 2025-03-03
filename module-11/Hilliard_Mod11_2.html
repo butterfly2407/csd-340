@@ -1,0 +1,63 @@
+/* Katie Hilliard, 02/26/2025, Module 11.2 Assignment */
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        let itemList = [];
+
+        function addItem() {
+            let inputBox = document.getElementById("inputBox");
+            let item = inputBox.value.trim();
+
+            if (item !== "") {
+                itemList.push(item);
+                alert(`Item: ${item} Added as Item ${itemList.length}`);
+                inputBox.value = "";
+            } else {
+                alert("Please enter a valid item.");
+            }
+        }
+
+        function deleteLastItem() {
+            if (itemList.length > 0) {
+                let removedItem = itemList.pop();
+                alert(`Deleted Item: ${removedItem}`);
+            } else {
+                alert("No items to delete.");
+            }
+        }
+
+        function displayItems() {
+            let displayArea = document.getElementById("displayArea");
+            displayArea.innerHTML = "";
+
+            if (itemList.length === 0) {
+                displayArea.innerHTML = "No items in the list.";
+            } else {
+                itemList.forEach((item, index) => {
+                    displayArea.innerHTML += `Item ${index + 1} = ${item} <br>`;
+                });
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+    <p>
+        This is an interactive To Do List. Type in your first item in the text box, then click Add. 
+        Click the Display button to see current items in the list. 
+        Click on Delete Last Entry if you'd like to remove the last entry.
+    </p>
+
+    <input type="text" id="inputBox">
+    <button onclick="addItem()">Add</button>
+    <button onclick="deleteLastItem()">Delete Last Entry</button>
+    <button onclick="displayItems()">Display</button>
+
+    <div id="displayArea" style="margin-top: 10px;"></div>
+</body>
+</html>
