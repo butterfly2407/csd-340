@@ -1,0 +1,59 @@
+/* Katie Hilliard, 01/19/2025, Module 3.3 Assignment */
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        const books = [
+            "It Ends with Us",
+            "It's All In Your Head",
+            "A Perfect Life",
+            "When Women Pray",
+            "The Shift",
+            "Let It Go",
+            "Disciplines of a Godly Woman",
+            "Girl in Pieces",
+            "Ugly Love",
+            "Maybe Now"
+        ];
+
+        function displayAscending() {
+            let sortedBooks = [...books].sort();
+            document.getElementById("bookList").innerHTML = sortedBooks.join("<br>");
+        }
+
+        function displayDescending() {
+            let sortedBooks = [...books].sort().reverse();
+            document.getElementById("bookList").innerHTML = sortedBooks.join("<br>");
+        }
+    </script>
+    <link rel="stylesheet" href="Hilliard_Mod3_3.css">
+</head>
+<body>
+    <header>
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+    </header>
+    
+    <main>
+        <div id="container">
+            <section style="width: 100%; text-align: center;">
+                <h3>Top 10 Favorite Books</h3>
+                <button onclick="displayAscending()">Top to Bottom</button>
+                <button onclick="displayDescending()">Bottom to Top</button>
+                <div id="bookList" style="margin-top: 20px;"></div>
+            </section>
+
+            <div style="width: 100%; margin-top: 60%; float: right;">
+                <a href="https://butterfly2407.github.io/csd-340/">Back to Index Page</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+
+
+
